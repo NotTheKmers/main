@@ -28,12 +28,16 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     mkdir ~/2013-khmer-counting/data/
     make KHMER=~/2013-khmer-counting/src/khmer
     make copydata
-    
+        
     
 
 #%runscript
-#    echo "I'm just going to go ahead and drop you into a shell..."
-#    /bin/bash
+    echo "Run the following commands:"
+    echo "cd ../notebook"
+    echo "ipython notebook --no-browser --ip=* --port=80 &"
+    echo "cd ../"
+    echo "make"
+    /bin/bash
 
 
 
